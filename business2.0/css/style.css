@@ -1,0 +1,135 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat' , sans-serif;
+    color: #616971;
+}
+
+/***************************** TOP BAR HEADER ***************************/
+
+.top-bar {
+    background: #7aaec4;
+    height: 2.8rem;
+    padding: 0.5rem 0;
+}
+
+.top-bar p a {
+    text-decoration:none ;
+    color: white;
+    font-size: 1.1rem;
+}
+
+
+
+/*********************************   NAVIGATION    ***************************/
+
+.navbar {
+    background-color:whitesmoke;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    box-shadow: 0 .5rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.nav-item {
+    padding: .4rem;
+}
+
+.nav-link {
+    color: black!important;
+}
+
+.nav-link:hover {
+    color: #396AFC!important;
+}
+
+
+
+/******************************* IMAGE CAROUSEL**************************************/
+
+
+
+.carousel-inner img {
+    max-height: 38rem;
+}
+
+.carousel {
+    
+    box-shadow: 0 .5rem 2rem rgba(0, 0, 0, 0.5);
+}
+
+
+.carousel-caption .container .row .col-sm-8{
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 20%;
+}
+
+
+
+@media (max-width:540px) {
+    .carousel-caption {
+        position: absolute;
+        top: 20px;
+    }
+}
+
+
+
+/************************ CONTENT 1 *******************************/
+
+.title-border {
+    content: '';
+    width: 30%;
+    height: 2px;
+    display: block;
+    background-color: #EF233C;
+    border-radius: 50%;
+    margin:1% ;
+    margin-left:35% ;
+}
+
+/***************************** fixed background ********************************/
+ .fixed {
+    background-image: url(../img/10.webp);
+    background-size: cover;
+    padding: 10rem 0;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+
+
+
+/********************************  EMOJI NAVBAR *************************************/
+
+.emoji {
+    background: linear-gradient(to right,wheat,whitesmoke,pink);
+    min-height: 0!important;
+    padding: 0.4rem 0!important;
+    color:yellowgreen;
+    font-size: 2rem;
+}
+
+.emoji i {
+    margin: 0 auto;
+}
+
+
+
+/***************** FOOTER *******************************/
+
+
+footer span:hover {
+    color:yellow;
+}
+
+
+
+
+
+
