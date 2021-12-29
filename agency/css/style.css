@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+.navbar {
+    background: linear-gradient(to right, #ab45a3, #a345ab);
+}
+
+.navbar .nav-item .nav-link {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.navbar .nav-item {
+    margin-left: 10px;
+}
+
+
+.navbar .nav-item .nav-link:hover {
+    color:white!important;
+}
+
+.navbar .navbar-nav .nav-item .color {
+    color:white!important;
+}
+
+.navbar .navbar-nav .nav-item .color:hover {
+    color:black!important;
+}
+
+
+/************************* BANNER ***************************************/
+.banner {
+    background: linear-gradient(to right, #ab45a3, #a345ab);
+}
+
+
+.banner .row .col-md-6 a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.height {
+
+    height: 100vh;
+}
+
+
+
+/*************************************  CONTENT 2 ********************************************/
+
+.content-2 .a, .b, .c, .d, .e{
+    width: 5%;
+    transition: all 1s ease;
+}
+
+.content-2:hover .a {
+    width: 25%;
+}
+
+
+.content-2:hover .b {
+    width: 50%;
+}
+
+
+
+.content-2:hover .c {
+    width: 75%;
+}
+
+
+.content-2:hover .d {
+    width: 100%;
+}
+
+
+
+.content-2:hover .e {
+    width: 100%;
+}
+
+
+/*********************************** FOOTER *******************************/
+
+footer {
+    background: linear-gradient(to right, #ab45a3, #a345ab);
+    margin-top: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white!important;
+}
+
+footer a:hover {
+    text-decoration: block;
+    color: black!important;
+}
