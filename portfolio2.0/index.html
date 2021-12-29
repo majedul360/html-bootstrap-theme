@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Advance 2</title>
+    <!--------------------MAIN CSS -------------------------->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!------------------------ GOOGLE FONT -------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Bootstrap Css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!------------------------------ FONT AWESOME-------------------------------------------->
+    <script src="https://kit.fontawesome.com/49b578ec4e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+  
+    <header>
+
+<div>
+    <i class="fas fa-bars" id="menu-bar"></i>
+</div>
+
+        <a href="" class="logo">photobook</a>
+
+        <nav class="navbar">
+            <a href="#home"> home </a>
+            <a href="#services"> services</a>
+            <a href="#advantage"> advantage </a>
+            <a href="#solutions"> solutions </a>
+            <a href="#testimonial"> testimonial</a>
+            <a href="#payment"> payment</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <a href="#" class="contact">+8801317-999607</a>
+        <div class="icons">
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-times" id="delete"></label>
+        </form>
+    
+    </header>
+
+    
+    
+    <!--------------------- LOGIN FORM --------------------------->
+
+    <div class="login-form-container">
+        <form action="" class="form" onsubmit="return validForm ()">
+
+            <i class="fas fa-times" id="login-close"></i>
+
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email" id=email> <br>
+            <p class="error" id="email-error"></p>
+            <input type="password" class="box" placeholder="enter your password" id="password"> <br>
+            <p class="error" id="password-error"></p>
+            <input type="submit" value="login now" class="btn"> <br>
+            <input type="checkbox" id="remember">
+            <label for="remember"> remember me</label>
+            <p>forgat password? <a href="#"> click here </a></p>
+            <p>don't have an account? <a href="#"> registar now </a></p>
+        </form>
+    </div>
+    
+
+
+  <!-------------------CONTENT 1 --------------------->
+
+  <div class="content-1" id="home">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          
+        <h1 >Create Your Own Photostory</h1>
+        <h5>Make your photobook online</h5>
+        <button class="btn btn-outline-dark btn-sm">Make Your Photobook</button>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <!--------------------------- CONTENT 2 --------------------------------->
+
+  <div class="content-2" id="services">
+    <div class="container">
+  <div class="radius">
+      <div class="row justify-content-center">
+          <div class=" col-md-3 col-lg-2">
+              <div class="circle">
+                <div class="icon">
+                  <i class="fas fa-cloud-download-alt fa-3x"></i>
+                </div>
+              </div>
+          <div class="line">
+                  <ul>
+                      <li>-</li>
+                      <li>-</li>
+                      <li>-</li>
+                  </ul>
+              </div>
+              <div class="text-1">
+                <p class="download">Download </br> <span>Photos</span></p>
+              </div>
+          </div>
+  
+              <div class=" col-md-3 col-lg-2 ">
+                  <div class="circle">
+                    <div class="icon">
+                      <i class="fas fa-crop fa-3x"></i>
+                    </div>
+                  </div>
+              <div class="line ">
+                      <ul>
+                          <li>-</li>
+                          <li>-</li>
+                          <li>-</li>
+                      </ul>
+                    </div>
+
+                    <div class="text-2">
+                      <p class="design">Design Your </br> <span>Photobook</span></p>
+                    </div>
+              </div>
+  
+              <div class=" col-md-3 col-lg-2 ">
+                <div class="circle">
+                  <div class="icon">
+                    <i class="fab fa-cc-amazon-pay fa-3x"></i>
+                  </div>
+                </div>
+            <div class="line ">
+                    <ul>
+                        <li>-</li>
+                        <li>-</li>
+                        <li>-</li>
+                    </ul>
+                </div>
+
+                <div class="text-3">
+                  <p class="pay"><span class="a">Pay</span></br><span class="b">For Service</span></p>
+                </div>
+            </div>
+            
+                  <div class=" col-md-2 col-lg-2 ">
+                    <div class="circle">
+                      <div class="icon">
+                        <i class="fab fa-joget fa-3x"></i>
+                      </div>
+                    </div>
+
+                    <div class="text-4">
+                      <p class="get"><span class="c">Get Your </span></br> <span class="d">Photoook</span></p>
+                    </div>
+                  </div>
+          </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+
+  <!---------------------------- CONTENT 3 ----------------------->
+
+  <div class="content-3" id="advantage">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-12">
+          <p>advantage</p>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class=" col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center advantage">
+          <div class="img-back">
+            <img class="round-img" src="img/r.png" alt="">
+          </div>
+          <h6 class="my-4"><span>Important photos </span></br> from your social network </h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dicta aliquid ad deleniti? Iste, accusantium ullam quos.</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center  advantage ">
+          <div class="img-back">
+            <img class="round-img" src="img/7.jpg" alt="">
+          </div>
+          <h6 class="my-4">Photo eadting </h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dicta aliquid ad deleniti? Iste, accusantium ullam quos.</p>
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-3 col-xl-3 text-center  advantage">
+          <div class="img-back">
+            <img class="round-img" src="img/8.jpg" alt="">
+          </div>
+          <h6 class="my-4">Templates</h6>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error dicta aliquid ad deleniti? Iste, accusantium ullam quos.</p>
+        </div>
+      </div>
+
+      <div class="row justify-content-center text-center mt-5">
+        <div class="col-12">
+          <button class="btn btn-danger">MAKE YOUR PHOTOBOOK</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!---------------------- CONTENT 4 ----------------------->
+
+  <div class="content-4" id="solutions">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>ready solutions<p>
+        </div>
+      </div>
+
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-lg-3 col-xl-3 margin">
+            <div class="light">
+              <p class="text-center head">lightbook</p>
+              <div class="about">
+                <div class="row">
+                  <div class="col-3">
+                    <div class="icon ms-auto mb-3">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div class="icon ms-auto mb-3">
+                      <i class="fas fa-check"></i>
+                    </div>
+                    <div class="icon ms-auto mb-3">
+                      <i class="fas fa-check"></i>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="normal-text">
+                      <p class="mt-3">15*10 cm</p>
+                      <p class="pages">12 pages</p>
+                      <p class="pages">free cover</p>
+                    </div>
+                  </div>
+                  <div class="col-3"></div>
+                </div>
+              </div>
+              <p class="text-center" style="font-size: 70px;">$129</p>
+
+              <p class="price text-center">Make Your lightbook</p>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 ">
+          <div class="main">
+            <div class="top"></div>
+            <div class="text"><p class="seller">best seller</p></div>
+            
+        
+
+          <div class="light">
+            <div class="ex ">
+              <p class=" head text-center">classicbook</p>
+            </div>
+            <div class="about">
+              <div class="row">
+                <div class="col-3">
+                  <div class="icon ms-auto mb-3">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="icon ms-auto mb-3">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="icon ms-auto mb-3">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="normal-text">
+                    <p class="mt-3">30*21 cm</p>
+                    <p class="pages">36 pages</p>
+                    <p class="pages">fabric cover</p>
+                  </div>
+                </div>
+                <div class="col-3"></div>
+              </div>
+            </div>
+            <p class="text-center" style="font-size: 70px;">$329</p>
+
+            <p class="price text-center">Make Your lightbook</p>
+          </div>
+          </div>
+      </div>
+
+      
+
+
+      <div class="col-md-4 col-lg-3 col-xl-3 margin">
+        <div class="light">
+          <p class=" head text-center">premiumbook</p>
+          <div class="about">
+            <div class="row">
+              <div class="col-3">
+                <div class="icon ms-auto mb-3">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="icon ms-auto mb-3">
+                  <i class="fas fa-check"></i>
+                </div>
+                <div class="icon ms-auto mb-3">
+                  <i class="fas fa-check"></i>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="normal-text">
+                  <p class="mt-3">42*50 cm</p>
+                  <p class="pages">50 pages</p>
+                  <p class="pages">hard cover</p>
+                </div>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
+          <p class="text-center" style="font-size: 70px;">$729</p>
+
+          <p class="price text-center">Make Your premiumbook</p>
+        </div>
+    </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------------- CONTENT 5-------------------->
+
+  <div class="content-5" id="testimonial">
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-md-6 col-lg-5">
+          <p class="testi">testimonials</p>
+          <div class="row my-4">
+            <div class="col-lg-4">
+              <div class="majedul">
+                <img src="img/12.jpg"alt="">
+              </div>
+            </div>
+
+            <div class="col-lg-8">
+              <p class="mj" style="font-size: 14px;"> 
+                <span class="inline">Majedul Islam </span></br> 
+                <span class="photographer">Wedding Photographer</span>
+              </p>
+            </div>
+            
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veritatis modi natus! Quibusdam commodi, quo a iure, dignissimos labore illum, eveniet cupiditate soluta aut porro exercitationem debitis quisquam consequatur deleniti.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque veritatis modi natus! Quibusdam commodi, quo a iure, dignissimos labore illum, eveniet cupiditate soluta aut porro exercitationem debitis quisquam consequatur deleniti.</p>
+          <p class="text-end mb-5">Next testimonial .....</p>
+          <div class="button text-center">
+            <button class="btn btn-outline-dark mb-3">MAKE YOUR PHOTOBOOK</button>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-5">
+          <img src="img/14.jpg" class="palok" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------------ CONTENT 6 ------------------->
+
+  <div class="content-6" id="payment">
+    <div class="container">
+      <div class="row justify-content-evenly">
+        <div class="col-md-4 col-lg-3">
+          <div class="term">
+            <p class="terms">terms</p>
+            <div class="back-col">
+              <p class="margin-left pt-4 ms-3">Lorem, ipsum dolor sit amet  adipisicing ytguygjh elit. quas quia ducimus, expedita facere.</p>
+            <p class="margin-left ms-3 pb-5">Lorem, ipsum dolor sit amet adipisicing elit. quas quia ducimus, expedita facere.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+          <div class="term">
+            <p class="terms">payment</p>
+            <div class="back-col">
+              <p class="margin-left pt-4 ms-4" style="font-weight:bold;">Payment methods:</p>
+            <ol class="margin-left ms-3 pb-5">
+              <li>VISA</li>
+              <li>MASTERCARD</li>
+              <li>PAYPAL</li>
+              <li>AMERICAN EXPRESS</li>
+            </ol>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-lg-3">
+          <div class="term">
+            <p class="terms">shiping</p>
+            <div class="back-col">
+              <p class="margin-left pt-4 ms-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. quas quia ducimus.</p>
+            <p class="margin-left ms-3 pb-5" style="color:brown; font-size: 22px;"> 
+              FREE SHIPPING FOR PREMIUM
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <button class="btn btn-danger btn-lg">
+          MAKE YOUR PHOTOBOOK
+        </button>
+      </div>
+     
+    </div>
+  </div>
+
+<!------------------- FOOTER ------------------------>
+
+<footer>
+  <div class="container">
+    <div class="row justify-content-evenly">
+      <div class="col-lg-2">
+        <span class="title-border mb-4"></span>
+        <p>About us</p>
+        <p>Careers</p>
+        <p>Help</p>
+        <p>Presss</p>
+      </div>
+
+      <div class="col-lg-2">
+        <span class="title-border mb-4"></span>
+        <p>Terms</p>
+        <p>Payment</p>
+        <p>Contact</p>
+        <p>Shipping</p>
+      </div>
+
+      <div class="col-lg-2">
+        <span class="title-border mb-4"></span>
+        <p>LIGHTBOOK</p>
+        <p>CLASSICBOOK</p>
+        <p>PREMIUMBOOK</p>
+      </div>
+
+      <div class="col-lg-2">
+        <span class="title-border mb-4"></span>
+        <div>
+          <span><i class="fab fa-facebook "></i></span>
+          <span><i class="fab fa-twitter mx-3 "></i></span>
+          <span><i class="fab fa-instagram "></i></span>
+        </div>
+        <div class="design text-center">
+          <p class="mb-1">Designed By</p>
+          <p class="name">MJ1</p>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 70px;">
+        <p>	&copy; 2021 PhotoBook.All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/script.js"></script>
+   <!------------- BOOTSTRAP JS --------------------------->
+   <script src="js/bootstrap1.js"></script>
+   <script src="js/bootstrap2.js"></script>
+   <script src="js/bootstrap3.js"></script>
+</body>
+</html>

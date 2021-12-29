@@ -1,0 +1,811 @@
+
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x:  hidden;
+}
+
+:root {
+    --mob-back-col:#ffd200 ;
+    --grether-icon-col:#231f20 ;
+    --li-col:#ffd200 ;
+    --border-col:#ffd200 ;
+    --icon-col: rebeccapurple;
+    --content-3-back-col:#f3f0e7;
+    --title-col:#3d3c3a;
+    --contrnt-5-back-col:#f7f0e6;
+    --con-6-col-lg-3-col:#f7f0e6;
+    --title-border-col:black;
+}
+
+:root {
+    --orange: #ffa500;
+    --header-background:#333;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background: var(--orange);
+    color: white;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 10rem;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:#040d21;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    z-index: 1000;
+}
+
+
+header #menu-bar {
+    font-size: 3rem;
+    color: white;
+    border: .1rem solid white;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+header .logo {
+    font-size:3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-family:'Indie Flower', cursive ;
+    background:radial-gradient(red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .logo::first-letter {
+    color: var(--orange);
+}
+
+
+
+header .navbar a { 
+    color: white;
+    font-size: 2rem;
+    margin: 0 .8rem;
+    text-decoration: none;
+}
+
+
+header .navbar a:hover {
+    color: var(--orange);
+}
+
+header .contact {
+    background: var(--orange);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+header .icons i {
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+
+header .icons i:hover {
+    color: var(--orange);
+}
+
+header .search-bar-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--header-background);
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255,255,255,.2);
+    display: none;
+}
+
+header .search-bar-container #search-bar {
+    width: 40%;
+    padding: 1rem;
+    text-transform: none;
+    color: var(--header-background);
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+
+header .search-bar-container label {
+    color: white;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+}
+
+header .search-bar-container label:hover {
+    color: var(--orange);
+}
+
+
+@media (max-width:1024px) {
+    header {
+        padding: 2rem 0%;
+    }
+}
+
+@media (max-width:768px) {
+
+    header {
+        font-size: 52.5%;
+        padding: 2rem 1rem;
+    }
+
+    header #menu-bar {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--header-background);
+        display: none;
+
+    }
+
+    header .navbar.active{
+        display:block;
+    }
+
+    header .navbar a{
+        display: block;
+        
+        margin: 5px 20px;
+    
+    }
+
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 35rem;
+    }
+
+}
+
+@media (max-width:320px) {
+    header {
+        font-size: 45%;
+    }
+}
+
+/********************** LOGIN FORM **********************/
+
+.login-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2500;
+    display: none;
+    
+}
+
+.login-form-container .form  {
+    width: 50rem;
+    background: white;
+    border-radius: .5rem;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+
+.login-form-container #login-close {
+    position: absolute;
+    top: 0;
+    right: .5rem;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+
+.login-form-container  form h3 {
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1rem 0;
+    margin-top: 5rem;
+}
+
+.login-form-container  form .box {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: var(--header-background);
+    border: .1rem solid rgba(0,0,0,.7);
+    margin: .6rem 0;
+    text-transform: none;
+    border-radius: 5px;
+}
+
+.login-form-container  form .box:focus {
+    border:.1rem solid var(--orange);
+}
+
+.login-form-container  form .btn {
+    width: 100%;
+    background: var(--orange);
+    color: white;
+    cursor: pointer;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+
+.login-form-container  form .btn:hover {
+    background: rgba(255,165,0,0.2);
+    color: var(--orange);
+}
+
+.login-form-container  form #remember {
+    margin: 1rem 0;
+    cursor: pointer;
+    
+}
+
+.login-form-container  form label {
+    font-size: 1.5rem;
+}
+
+.login-form-container  form p {
+    margin: .5rem 0;
+    font-size:1.5rem;
+    color: #666;
+}
+
+.login-form-container  form p a {
+    color: var(--orange);
+}
+
+.login-form-container  form p a:hover {
+    color:var(--header-background);
+    text-decoration: underline;
+}
+
+.login-form-container .form .error {
+    text-transform: none;
+    color: red;
+}
+
+
+
+
+
+
+
+/**************************** CONTENT 1 **********************/
+
+.content-1 {
+    background:rgba(0,0,0,0.3) url(../img/6.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    margin-top: 7.5rem;
+}
+
+.content-1 .col-12 > h1 {
+    margin-top:10vw;
+    font-size: 4vw;
+    -webkit-text-fill-color: aliceblue;
+    -webkit-text-stroke: 0.15vw #ad2c2c;
+}
+
+.content-1 .col-12 > h5 {
+    font-size: 1.7vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.content-1 .col-12 > button {
+    font-size:1.5vw ;
+    color: red;
+}
+
+
+/********************** CONTENT 2 **************************/
+
+.content-2 {
+    margin-top: 5vw;
+}
+
+.content-2 .line ul li {
+    list-style: none;
+    margin-right: 1.5vw;
+    font-size: 3vw;
+    margin-top: 50px;
+    color:var(--li-col) ;
+    
+}
+.radius {
+    position: relative;
+}
+.line{
+    margin-left:6vw;
+    position: absolute;
+    bottom: 100px;
+}
+
+.content-2 ul {
+    display: flex;
+    margin-left: 1rem;
+    
+}
+
+
+.col-lg-2 .circle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid var(--border-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.col-lg-2 .icon > i {
+    color: var(--icon-col);
+}
+
+
+@media (max-width:500px) {
+    .col-lg-2 .circle{
+        margin-left: 31vw;
+    }
+
+    .col-lg-2 .text-1 .download {
+        margin-left: 32vw;
+    }
+    .col-lg-2 .text-2 .design {
+        margin-left: 32vw;
+    }
+
+    .col-lg-2 .text-3 .pay {
+        margin-left: 32vw;
+    }
+
+    .col-lg-2 .text-4 .get {
+        margin-left: 32vw;
+    }
+    
+    
+    
+}
+
+@media (max-width:770px) {
+.content-2 .line ul li {
+        display: none;
+    }
+}
+
+
+@media (max-width:1025px) {
+    ul li:nth-child(1){
+        display:none ;
+    }
+
+
+    .line{
+        margin-left:8.8vw;
+        position: absolute;
+    }
+}
+
+
+/***************** TEXT ********************/
+
+.content-2 .col-lg-2 .text-1 {
+    font-size: 20px;
+    margin-left: 12px;
+    margin-top: 1vw;
+}
+
+.content-2 .col-lg-2 .text-1 span {
+    margin-left: 15px;
+}
+
+.content-2 .col-lg-2 .text-2 {
+    font-size: 20px;
+    margin-left: 8px;
+    margin-top: 1vw;
+}
+
+
+.content-2 .col-lg-2 .text-3 {
+    font-size: 20px;
+    margin-top: 1vw;
+}
+
+.content-2 .col-lg-2 .text-3 .a {
+    margin-left: 45px;
+}
+
+.content-2 .col-lg-2 .text-3 .b {
+    margin-left: 15px;
+}
+
+.content-2 .col-lg-2 .text-4 {
+    font-size: 20px;
+    margin-top: 1vw;
+}
+
+.content-2 .col-lg-2 .text-4 .c {
+    margin-left:19px ;
+}
+
+.content-2 .col-lg-2 .text-4 .d {
+    margin-left:15px ;
+}
+
+
+/******************** CONTENT 3 ************************/
+
+.content-3 {
+    background-color:var(--content-3-back-col) ;
+    margin-top: 3vw;
+    padding-bottom: 2vw;
+}
+
+.content-3 .col-12 p {
+    margin-top: 3vw;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--title-col);
+}
+
+.content-3 .advantage .img-back {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 160px;
+    height:160px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left:5vw;
+}
+
+.content-3 .advantage .round-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+.content-3 .advantage h6 {
+    font-size: 2rem;
+}
+
+.content-3 .advantage p {
+    font-size: 1.5rem;
+}
+
+
+.content-3 .btn {
+    padding: 1rem;
+}
+
+@media (max-width:1025px) {
+    .content-3 .advantage .img-back {
+        margin-left:2.5vw;
+    }
+}
+
+@media (max-width:550px) {
+    .content-3 .advantage .img-back {
+       margin-left: 30vw;
+    }
+}
+
+@media (max-width:400px) {
+    .content-3 .advantage .img-back {
+       margin-left: 25vw;
+    }
+}
+
+
+/************************ CONTENT 4 *********************************/
+
+.content-4 .col-12 p {
+    margin-top: 6vw;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.content-4 .row .light {
+    border: 8px solid var(--border-col);
+    border-top: none;
+    border-radius: 5px;
+    margin-top: 0;
+}
+
+
+.content-4 .row .light .head {
+    text-transform: uppercase;
+    font-size: 24px;
+    background-color: var(--border-col);
+    padding: 30px;
+}
+
+
+.content-4 .row .light .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--border-col);
+}
+
+.content-4 .row .light .about .pages {
+    margin-top: 25px;
+}
+
+
+.content-4 .row .light .price {
+    text-transform: uppercase;
+    font-size: 20px;
+    
+    background-color: var(--border-col);
+    padding: 10px 10px;
+    margin-bottom: 0;
+
+}
+
+
+/******************************** MIDDLE COLUM ***********************/
+
+.top {
+    width: 200px;
+    height: 80px;
+    background-color:var(--border-col);
+    clip-path: polygon(14% 65%, 85% 65%, 100% 100%, 0% 100%);
+    margin-left: 50px;
+    margin-bottom: 0;   
+}
+
+.main {
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    left: 85px;
+    top: 60px;
+}
+
+.text .seller {
+    text-transform: uppercase;
+    color: #e11a27;
+    font-size: 2rem;
+}
+
+.content-4 .row .margin {
+    margin-top: 80px;
+}
+
+
+@media (max-width:1025px) {
+    .top {
+        width: 180px;
+        margin-left:20px;   
+    }
+    .text {
+        position: absolute;
+        left: 45px;
+        top: 60px;
+    }
+}
+
+@media (max-width:500px) {
+    .top {
+        width: 200px;
+        margin-left:95px;   
+    }
+    .text {
+        position: absolute;
+        left: 130px;
+        top: 60px;
+    }
+}
+
+@media (max-width:400px) {
+    .top {
+        width: 200px;
+        margin-left:70px;   
+    }
+    .text {
+        position: absolute;
+        left: 102px;
+        top: 60px;
+    }
+}
+
+@media (max-width:330px) {
+    .top {
+        width: 200px;
+        margin-left:50px;   
+    }
+    .text {
+        position: absolute;
+        left: 82px;
+        top: 60px;
+    }
+}
+
+
+/************************ CONTENT 5 ***********************/
+
+.content-5 {
+    background-color:var(--content-3-back-col) ;
+    margin-top: 7vw;
+}
+
+.content-5 .col-lg-5 .testi {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.content-5 .col-lg-5 .testi::first-letter {
+    font-size: 50px;
+    color: var(--border-col);
+}
+
+.content-5 .col-lg-5 .majedul > img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+
+
+.content-5 .col-lg-5 .col-lg-8 .inline {
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 300;
+    background: linear-gradient(red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-5 .col-lg-5 .col-lg-8 .mj::first-letter {
+    font-size: 50px;
+    background: linear-gradient(red,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content-5 .col-lg-5 .col-lg-8 .mj .photographer {
+    background: linear-gradient(blue,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.content-5 .col-lg-5 .col-lg-8 .mj {
+    margin-top: 20px;
+}
+
+.content-5 .col-lg-5 .palok {
+    width: 100%;
+    height: 100%;
+}
+
+
+/**************************** CONTENT 6 *********************/
+
+.content-6 {
+    margin-top: 6vw;
+}
+
+
+
+
+.content-6 .terms {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    background-color: var(--border-col);
+    padding: 20px;
+    margin-bottom: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.content-6 .back-col {
+    background-color: var(--con-6-col-lg-3-col);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.content-6 .btn {
+    padding: 1rem;
+}
+/***************** FOOTER **********************/
+
+footer {
+    margin-top: 8vw;
+    font-weight: bold;
+    background-color: var(--border-col);
+}
+
+
+footer .col-lg-2  .title-border {
+    content: '';
+    width: 70%;
+    height: 2px;
+    display: block;
+    background-color:var(--title-border-col);
+    margin-top: 60px;
+    
+}
+
+footer i {
+    font-size: 25px;
+}
+footer .design {
+    border: 2px solid #3d3c3a;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+footer .design .name {
+    font-size: 25px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
