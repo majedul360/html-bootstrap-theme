@@ -1,0 +1,274 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x:  hidden;
+   
+}
+
+:root {
+    --background-color:#ffff00;
+    --border-color:#ededed;
+    --text:black;
+    --a-color:red;
+    --icon:#3abca7;
+    --marketing:#00bcd4;
+    --video: #d47f00;
+    --ppc:#5f00d4 ;
+    --marketing-icon: yellow;
+    --video-icon:rgb(153, 0, 255) ;
+    --ppc-icon:cyan ;
+    --footer:#e3e3e3 ;
+    --font-family:'Indie Flower', cursive; 
+    --heading-font:'Gluten', cursive; 
+}
+
+
+
+.advance {
+    border-top:  10px solid var(--border-color);
+    height: 70vh;
+}
+
+.left {
+    background-color:var(--background-color);
+    clip-path: polygon(0 0, 72% 9%, 100% 100%, 0 100%);
+    
+}
+
+.right {
+    
+    border-bottom: 10px solid var(--border-color);
+    border-right: 10px solid var(--border-color);  
+}
+
+
+.row .col-md-7 h1 {
+    margin-top: 20vh;
+    margin-left:10vw;
+    -webkit-text-fill-color: cornflowerblue;
+    -webkit-text-stroke: 2px;
+}
+   
+
+.row .col-md-7 .text {
+    margin-left:5vw;
+    font-size: 1vw;
+}
+
+.row .col-md-7 .text::first-letter {
+    font-size: 2vw;
+    color: darkcyan;
+}
+
+
+.row .col-md-7  a {
+    color: var(--text);
+    margin-left: 5vw;
+    font-weight: bold;
+    
+}
+
+
+
+.row .right .text-anim {
+    font-size: 7vw;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    margin-top: 6vh;
+
+    
+}
+
+/****************** CONTENT 2 **************************/
+
+.content-2 .icon {
+    background-color: white;
+    width: 65px;
+    height: 65px;
+    box-shadow: 5px 5px 6px -5px rgba(0,0,0,0.4),
+    -5px -5px 6px -5px rgba(0,0,0,0.4);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.content-2 .icon i {
+    margin-top: 2vh;
+    color:var(--icon);
+}
+
+h3 {
+    background-color: var(--background-color);
+    clip-path: polygon(11% 18%, 88% 45%, 100% 100%, 0% 100%);
+    display: inline-block;
+    padding: 10px 25px;
+    padding-top: 40px;
+    font-family: var(--heading-font);
+    
+}
+
+
+/****************** CONTENT 3 *********************/
+
+iframe {
+    border-radius: 20px;
+    transform: scale(1);
+    transition: all 1s ease;
+}
+
+iframe:hover {
+    transform: scale(1.1);
+    transition: all 1s ease ;
+}
+
+.content-3 p::first-letter{
+    font-size:2vw ;
+    color: rebeccapurple;
+}
+
+.content-3 {
+    margin-top: 25vh;
+}
+
+.content-3 a {
+    color: var(--a-color);
+}
+
+
+/********************* CONTENT 4 *************************/
+
+
+.content-4 {
+    margin-top: 10VH;
+}
+
+.content-4 .brand {
+    background-color: var(--background-color);
+}
+
+.content-4 .marketing {
+    background-color:var(--marketing);
+}
+
+.content-4 .video {
+    background-color: var(--video);
+}
+
+.content-4 .ppc {
+    background-color: var(--ppc);
+}
+
+
+
+/************* CONTENT 4 CIRCLE *********************/
+
+.content-4 .svg-1 .skill{
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.content-4 .svg-1 .skill:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.content-4 .svg-2 .skill{
+    transform: scale(1);
+    transition: all 0.5s ease;
+}
+
+.content-4 .svg-2 .skill:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+.content-4 .col-md-6 .skill {
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left:6px;
+    display: inline-block;
+}
+
+.content-4 .col-md-6 .svg-2 {
+    margin-top: 10vh;
+}
+
+
+
+
+.content-4 .col-md-6 #number {
+    position: absolute;
+    top: 35px;
+    left: 34px;
+    font-size: 20px;
+    color: var(--icon);
+}
+
+.content-4 .col-md-6 .svg-2 .marketing-icon i {
+    color: var(--marketing-icon);
+    position: relative;
+    bottom: 7px;
+    left: 6px;
+    
+    
+}
+
+.content-4 .col-md-6 .svg-2 .video-icon i {
+    color: var(--video-icon);
+    position: relative;
+    left: 6px;
+    
+    
+}
+
+.content-4 .col-md-6 .svg-2 .ppc-icon i {
+    color: var(--ppc-icon);
+    position: relative;
+    left: 6px;
+}
+
+
+
+.content-4 .col-md-6 circle {
+    fill: none;
+    stroke:white;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    
+    
+}
+
+
+/************************ CONTENT 5 **************************/
+.content-5 {
+    margin-top: 15vh;
+}
+
+.content-5 .row .col-lg-3 h2 {
+    text-transform: uppercase;
+    font-size: 2vw;
+}
+
+
+/*************************** FOOTER ****************************/
+
+footer {
+    background-color:var(--footer) ;
+    padding: 30px 0px;
+}
+
+footer .row .canvas .title {
+    font-size: 2vw;
+    font-weight: bold;
+    font-family:var(--font-family);
+}
+
+footer .row .canvas .img img{
+    width: 40%;
+}
+
+
+
+
+
